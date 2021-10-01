@@ -2,7 +2,7 @@ var elList = document.querySelector('.list');
 var elForm = document.querySelector('.form');
 var elSelect = document.querySelector('select');
 
-elList.innerHTML = null;
+
 
 function generateGenres(films) {
 	var resultGaners = [];
@@ -30,6 +30,7 @@ elForm.addEventListener('submit', (evt)=>{
 generateGenres(films);
 
 function renderFilms(arr, node) {
+	elList.innerHTML = null;
 	arr.forEach((film) => {
 		if(film.genres.includes(elSelect.value)){
 		var newLi = document.createElement('li');
@@ -51,7 +52,7 @@ function renderFilms(arr, node) {
 			newGenreLi.setAttribute('class', 'grub-li ')
 		}
 
-		newLi.setAttribute('class', 'list__item film mb-3 text-center');
+		newLi.setAttribute('class', 'list__item film mb-3 text-center shadow');
 		newHeading.setAttribute('class', 'film__heading ');
 		newImage.setAttribute('class', 'film__image mb-1');
 		newImage.setAttribute('src', film.poster);
@@ -72,3 +73,5 @@ function renderFilms(arr, node) {
 }
 
 renderFilms(films, elList);
+
+
