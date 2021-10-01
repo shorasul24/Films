@@ -1,0 +1,22 @@
+body{
+   background-color: rgba(94, 108, 122, 0.8);
+}
+
+ul,a{
+   text-decoration: none;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   width: 100%;
+   max-width: 350px;
+   border-radius: 5px;
+   background-color:dimgray;
+   color: white;
+}
+
+.grub-li{
+   padding: 0 ;
+}
