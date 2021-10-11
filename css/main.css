@@ -26,3 +26,23 @@ li {
    max-width: 650px;
    column-gap: 100px;
 }
+
+.bar__left {
+   display: inline-block;
+   width: 100%;
+   max-width: 150px;
+   height: 100px;
+   padding: 5px 15px;
+   background-color: cyan;
+}
+
+.btn {
+   background-color:firebrick;
+}
+.bookmark__list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
